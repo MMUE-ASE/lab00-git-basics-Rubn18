@@ -50,6 +50,7 @@ void blink_once(unsigned int delay_ms)
  * The body should call blink_once in a loop — pseudocode in comments is fine.
  */
 void blink_n_times(unsigned int n, unsigned int delay_ms)
+/* Implementacion*/
 {
         for (unsigned int i = 0; i < n; i++) {
             blink_once(delay_ms);
