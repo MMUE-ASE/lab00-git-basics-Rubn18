@@ -51,9 +51,9 @@ void blink_once(unsigned int delay_ms)
  */
 void blink_n_times(unsigned int n, unsigned int delay_ms)
 {
-    /* TODO (Ejercicio E): implement on branch feat/blink-n-times */
-    (void)n;
-    (void)delay_ms;
+        for (unsigned int i = 0; i < n; i++) {
+            blink_once(delay_ms);
+        }
 }
 
 int main(void)
