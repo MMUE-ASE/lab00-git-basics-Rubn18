@@ -23,7 +23,7 @@
  */
 void blink_init(void)
 {
-    /* TODO (Ejercicio A): add placeholder comment here */
+    /*clock enabled*/
 }
 
 /*
