@@ -1,0 +1,16 @@
+# Compiled output (Lab 1 onwards)
+*.elf
+*.axf
+*.bin
+*.hex
+*.map
+*.out
+*.o
+*.a
+*.d
+
+# macOS metadata
+.DS_Store
+
+# Windows thumbnails
+Thumbs.db

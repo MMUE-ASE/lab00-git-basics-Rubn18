@@ -1,0 +1,27 @@
+name: "Lab 0 — Validación de ejercicios prácticos"
+
+on:
+  push:
+    branches:
+      - "**"
+  create:
+    tags:
+      - "v*"
+
+jobs:
+  check-git:
+    name: Validar historial Git
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout con historial completo
+        uses: actions/checkout@v4
+        with:
+          # fetch-depth 0 descarga todo el historial para que check_git.sh
+          # pueda contar commits, detectar ramas mergeadas y encontrar tags.
+          fetch-depth: 0
+
+      - name: Ejecutar validador de historial
+        run: |
+          chmod +x scripts/check_git.sh
+          bash scripts/check_git.sh | tee -a "$GITHUB_STEP_SUMMARY"

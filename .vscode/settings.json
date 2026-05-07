@@ -1,0 +1,29 @@
+{
+  // Terminal — Git Bash para ejecutar los scripts del laboratorio en Windows
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    }
+  },
+
+  // Editor — formato automático solo para Markdown
+  "editor.formatOnSave": false,
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.rulers": []
+  },
+
+  // Git — configuración para aprendizaje (sin atajos que oculten los comandos)
+  "git.autofetch": true,
+  "git.autofetchPeriod": 180,
+  "git.confirmSync": true,
+  "git.enableSmartCommit": false,
+  "git.postCommitCommand": "none",
+  "git.showPushSuccessNotification": true,
+
+  // Git Graph — descarga automática para ver ramas remotas actualizadas
+  "git-graph.repository.fetchAndPrune": true
+}
