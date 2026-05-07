@@ -37,7 +37,9 @@ void blink_init(void)
  */
 void blink_once(unsigned int delay_ms)
 {
-    /* TODO (Ejercicio B): implement on branch feat/blink-led */
+    SetPin(LED_PIN, HIGH); 
+    (void)delay_ms;
+    SetPin(LED_PIN, LOW); 
     (void)delay_ms;
 }
 
