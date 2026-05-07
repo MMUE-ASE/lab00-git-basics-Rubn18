@@ -1,7 +1,7 @@
 /*
  * blink.c — LED blink skeleton for Git workflow practice
  *
- * Author: TODO (Ejercicio A: escribe aqui tu nombre)
+ * Author: Ruben Diaz Castillo
  *
  * This file is intentionally incomplete. Its purpose is to give students
  * a real C file to modify across multiple commits during Lab 0.
