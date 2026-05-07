@@ -12,6 +12,6 @@
 #define SYS_FREQ_HZ 100000000UL /* 100 MHz — STM32F412ZG default */
 
 /* LED blink period in milliseconds — TODO (Ejercicio A): update to 1000 */
-#define BLINK_DELAY_MS 500U
+#define BLINK_DELAY_MS 1000
 
 #endif /* CONFIG_H */
